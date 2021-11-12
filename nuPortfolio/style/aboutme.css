@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/liv.jpg");
+}
+
+header {
+    background-color:rgba(137, 181, 175);
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+    /* background-image: url("../images/japan.jpg"); */
+    background-size: cover;
+}
+
+.main {
+    background-color: rgb(137, 181, 175);
+    background-size: cover;
+    /* opacity: 0.7; */
+    display: flex;
+    flex: 1 0 auto;
+    padding: 20px;
+}
+/* 
+#intro {
+    color: rgb(222, 217, 196);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+        color: rgb(222, 217, 196);
+} */
+
+.contents {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    align-items: center;
+    gap: 50px;
+    background-color:rgb(222, 217, 196);
+    text-shadow: 2px 2px gray;
+}
+
+.choice:link, .choice:visited {
+    text-decoration: none;
+    color: rgb(137, 181, 175);
+}
+
+.choice:hover, .choice:active {
+    color: whitesmoke;
+  }
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    background-color:rgba(137, 181, 175);
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+    background-size: cover;
+    margin: 0;
+}
+
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    color:black;
+}
+
+.artistRight {
+    background-color: rgba(137, 181, 175, 0.8);
+    background-size: cover;
+    height: 100%;
+    transition-timing-function: ease-out;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.imgRight {
+    width: 390px;
+    height: 510px;
+    object-fit: contain;
+    float: right;
+    border-radius: 5px;
+    margin: 5px;
+    border: 5px solid rgb(51, 51, 51);
+}
+
+footer {
+    background-color: rgb(137, 181, 175);
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 20px;
+    font-family: 'Secular One', sans-serif;
+    color: rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+}

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/liv.jpg");
+}
+
+header {
+    background-color:rgba(137, 181, 175);
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+    /* background-image: url("../images/japan.jpg"); */
+    background-size: cover;
+}
+
+.main {
+    background-color: rgb(137, 181, 175);
+    background-size: cover;
+    /* opacity: 0.7; */
+    display: flex;
+    flex: 1 0 auto;
+    padding: 20px;
+}
+/* 
+#intro {
+    color: rgb(222, 217, 196);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+        color: rgb(222, 217, 196);
+} */
+
+.contents {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    align-items: center;
+    gap: 50px;
+    background-color:rgb(222, 217, 196);
+    text-shadow: 2px 2px gray;
+}
+
+.choice:link, .choice:visited {
+    text-decoration: none;
+    color: rgb(137, 181, 175);
+}
+
+.choice:hover, .choice:active {
+    color: whitesmoke;
+  }
+
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: baseline;
+    background-color: rgb(137, 181, 175);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+    background-color:rgba(137, 181, 175);
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+    background-size: cover;
+    margin: 0;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 40px;
+    font-family: 'Secular One', sans-serif;
+    align-items: center;
+    background-color:rgb(222, 217, 196);
+    margin: 0;
+    text-shadow: 2px 2px gray;
+    text-decoration: none;
+}
+
+.num:link, .num:visited {
+    color: rgb(137, 181, 175);
+}
+
+.num:hover, .num:active {
+    color: whitesmoke;
+  }
+
+h3 {
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+    background-color: rgba(137, 181, 175, 0.5);
+    margin: 0;
+}
+
+  .titles {
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+}
+
+.email {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    align-items: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+    background-color: rgba(137, 181, 175, 0.5);
+}
+
+#name {
+    height: 35px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: none;
+}
+
+#email {
+    height: 35px;
+    width: 325px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: none;
+}
+
+#comment {
+    height: 100px;
+    width: 375px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: none;
+}
+
+.buttons #send #reset {
+    display: inline-block;
+}
+
+.footer {
+    background-color: rgb(137, 181, 175);
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 20px;
+    font-family: 'Secular One', sans-serif;
+    text-shadow: 2px 2px grey;
+    text-align: center;
+    gap: 80px;
+    text-decoration: none;
+}
+
+.footer:link, .footer:visited {
+    color: rgb(222, 217, 196);
+}
+
+.footer:hover, .footer:active {
+    color: whitesmoke;
+  }

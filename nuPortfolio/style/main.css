@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/liv.jpg")
+}
+
+header {
+    background-color:rgba(137, 181, 175);
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+}
+
+.main {
+    background-color: rgba(137, 181, 175, 0.6);
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex: 1 0 auto;
+    padding: 20px;
+    background-color: rgba(137, 181, 175, 0.6);
+}
+
+#intro {
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: rgb(222, 217, 196);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+    padding: 15px;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    align-items: center;
+    gap: 50px;
+    background-color:rgb(222, 217, 196);
+    text-shadow: 2px 2px gray;
+}
+
+
+
+a:link, a:visited {
+    color: rgb(137, 181, 175);
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    color: whitesmoke;
+  }
+
+footer {
+    background-color: #96C7C1;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 20px;
+    font-family: 'Secular One', sans-serif;
+    color: rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+}

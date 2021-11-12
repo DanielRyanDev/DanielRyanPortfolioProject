@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Josefin+Sans&family=Yanone+Kaffeesatz&display=swap");
+
+
+* {
+    justify-content: space-between;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/books.jpg");
+    background-size: auto;
+}
+
+header {
+    background-color:rgba(137, 181, 175);
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+}
+
+.main {
+    background-color: rgb(137, 181, 175);
+    background-size: cover;
+    /* opacity: 0.7; */
+    display: flex;
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    align-items: center;
+    gap: 50px;
+    background-color:rgb(222, 217, 196);
+    text-shadow: 2px 2px gray;
+}
+
+.choice:link, .choice:visited {
+    color: rgb(137, 181, 175);
+    text-decoration: none;
+}
+
+.choice:hover, .choice:active {
+    color: whitesmoke;
+  }
+
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: baseline;
+    background-color: rgb(137, 181, 175);
+}
+
+#intro {
+    color: rgb(222, 217, 196);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+    background-color: rgba(137, 181, 175, 0.6);
+}
+
+.navi {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(137, 181, 175);
+    margin: 0;
+}
+
+#goBack {
+    font-family: 'Secular One', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-color:rgb(137, 181, 175);
+    text-decoration: none;
+    width: 100%;
+    border: 2px solid rgb(222, 217, 196);
+    color: rgb(222, 217, 196);
+    text-shadow: 1px 1px black;
+}
+
+#articleTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 75px;
+    font-family: 'Bungee Shade', cursive;
+    color: #433520;
+    text-shadow: 2px 2px #FDE8CD;
+}
+
+
+.bookName {
+    font-family: 'Secular One', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color:rgba(250, 249, 246, 1);
+    text-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+}
+
+#pType1 {
+    color:rgba(250, 249, 246, 1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
+#pType2 {
+    color:rgba(250, 249, 246, 1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
+.booksRight {
+    background-color: rgba(0, 145, 124, 0.6);    
+    transition-timing-function: ease-out;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.imgRight {
+    width: 250;
+    height: 290px;
+    object-fit: scale-down;
+    float: right;
+    border-radius: 5px;
+    margin: 5px;
+    border: 5px solid #00917C;
+}
+
+.booksLeft {
+    background-color: rgba(67, 53, 32, 0.6);
+    transition-timing-function: ease-out;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.imgLeft {
+    width: 250;
+    height: 290px;
+    object-fit: scale-down;
+    float: left;
+    border-radius: 5px;
+    margin: 10px;
+       border: 5px solid #433520;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

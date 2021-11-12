@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/liv.jpg");
+}
+
+header {
+    /* background-color:rgba(137, 181, 175); */
+    display: flex;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    color:rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+    background-color: rgb(137, 181, 175);
+    background-size: cover;
+}
+
+.main {
+    background-color: rgba(137, 181, 175, 0.6);
+    background-size: cover;
+    /* opacity: 0.7; */
+    display: flex;
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+#intro {
+    color: rgb(222, 217, 196);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+        color: rgb(222, 217, 196);
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    align-items: center;
+    gap: 50px;
+    background-color:rgb(222, 217, 196);
+    text-shadow: 2px 2px gray;
+}
+
+.choice:link, .choice:visited {
+    color: rgb(137, 181, 175);
+}
+
+.choice:hover, .choice:active {
+    color: whitesmoke;
+  }
+
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: baseline;
+    background-color: rgba(137, 181, 175, 0.6);
+}
+
+.image {
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    /* border: solid red; */
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #96C7C1; */
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.img__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 2.5em;
+    margin-top: 0.25em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: rgb(213, 219, 179);
+  }
+
+footer {
+    background-color: rgb(137, 181, 175);
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 20px;
+    font-family: 'Secular One', sans-serif;
+    color: rgb(222, 217, 196);
+    text-shadow: 2px 2px grey;
+}
